@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaya Priyan N | PCB Design, RF Engineering & Antenna Portfolio</title>
+<meta name="description" content="Explore the engineering portfolio of Jaya Priyan N, an Electronics and Communication Engineering student showcasing PCB design, RF and antenna engineering, embedded systems, and technical projects.">
+<meta property="og:title" content="Jaya Priyan N | PCB Design, RF Engineering & Antenna Portfolio">
+<meta property="og:description" content="PCB design, RF and antenna engineering, embedded systems projects.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B1120'/><path d='M20 70h25V35h35' stroke='%2322D3EE' stroke-width='9' fill='none'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1120;--dark:#111827;--blue:#3B82F6;--cyan:#22D3EE;--text:#F8FAFC;--mute:#94A3B8;--light:#F8FAFC;--ink:#0B1120;--line:#e2e8f0;--r:20px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font:400 16px/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:#e8ecef;padding:0 16px}
+h1,h2,h3,.serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1.05;letter-spacing:-.01em}
+em{font-style:italic;color:var(--blue)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto}
+.page{background:var(--light);max-width:1240px;margin:16px auto;border-radius:28px;padding:16px;overflow:hidden}
+section{padding:88px 28px}
+h2{font-size:clamp(34px,5vw,56px);margin-bottom:20px}
+.label{font-size:13px;color:#64748b;margin-bottom:14px;display:flex;gap:8px;align-items:center}
+.label:before{content:"";width:9px;height:9px;border-radius:50%;border:2px solid var(--blue)}
+.btn{display:inline-block;padding:12px 22px;border-radius:99px;font:500 15px Inter;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:.2s}
+.btn.p{background:var(--cyan);color:var(--navy)}.btn.p:hover{background:#fff}
+.btn.g{border-color:rgba(255,255,255,.35);color:#fff}.btn.g:hover{background:rgba(255,255,255,.12)}
+.btn.d{background:var(--navy);color:#fff}.btn.d:hover{background:var(--blue)}
+/* nav */
+nav{position:fixed;top:22px;left:50%;transform:translateX(-50%);z-index:50;background:rgba(11,17,32,.92);backdrop-filter:blur(8px);border-radius:99px;padding:8px 10px 8px 22px;display:flex;align-items:center;gap:24px;max-width:calc(100% - 32px)}
+nav b{color:#fff;font:400 22px "Instrument Serif"}
+nav ul{display:flex;gap:18px;list-style:none;padding:0}
+nav a{color:var(--mute);text-decoration:none;font-size:14px}nav a:hover{color:#fff}
+nav .btn{padding:8px 16px;font-size:14px}
+#menu{display:none;background:none;border:0;color:#fff;font-size:22px;cursor:pointer}
+@media(max-width:900px){nav ul{display:none;position:absolute;top:58px;left:0;right:0;flex-direction:column;background:var(--navy);padding:20px;border-radius:20px}nav ul.open{display:flex}#menu{display:block}nav{justify-content:space-between;width:calc(100% - 32px)}nav>.btn{display:none}}
+/* hero */
+.hero{position:relative;background:var(--navy);color:var(--text);border-radius:24px;min-height:640px;padding:150px 40px 40px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:end}
+.hero svg.bg{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+.hero>*{position:relative}
+.hero h1{font-size:clamp(56px,10vw,128px);margin-bottom:14px}
+.hero .hl{color:var(--cyan);font:500 14px/1.5 ui-monospace,Menlo,monospace;margin-bottom:18px}
+.hero p{color:var(--mute);max-width:520px;margin-bottom:12px}
+.hero .q{color:var(--text);font-size:18px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 14px}
+.open{color:var(--cyan);font-size:14px}
+.art{align-self:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding:120px 24px 28px}}
+.wave path{stroke-dasharray:6 8;animation:dash 3s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-56}}
+.pulse{animation:pl 3s ease-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes pl{0%{opacity:.8;transform:scale(.4)}100%{opacity:0;transform:scale(1.5)}}
+/* about */
+.quote{font-size:clamp(30px,4.6vw,54px);max-width:960px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:40px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-size:26px;margin-bottom:8px}.card p{color:#475569;font-size:15px}
+.ico{width:40px;height:40px;border-radius:12px;background:var(--navy);color:var(--cyan);display:grid;place-items:center;margin-bottom:16px;font:500 13px ui-monospace,monospace}
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.skills .card h3{font-size:24px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{background:#eef2f7;border-radius:99px;padding:5px 12px;font-size:13px}
+/* projects */
+.proj{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;margin-bottom:18px;align-items:center}
+.proj:nth-child(even) .thumb{order:2}
+.thumb{background:var(--navy);border-radius:16px;aspect-ratio:4/3;display:grid;place-items:center;color:var(--cyan);overflow:hidden}
+.thumb svg{width:100%;height:100%}
+.proj h3{font-size:clamp(28px,3.4vw,40px);margin:6px 0 10px}
+.cat{font-size:13px;color:var(--blue);font-weight:500}
+.proj p{color:#475569;margin-bottom:14px}
+@media(max-width:800px){.proj{grid-template-columns:1fr}.proj:nth-child(even) .thumb{order:0}}
+/* dark band */
+.dark{background:var(--navy);color:var(--text);border-radius:24px}
+.dark .label{color:var(--mute)}
+.ach{list-style:none;padding:0;margin-top:30px}
+.ach li{display:flex;gap:20px;justify-content:space-between;align-items:baseline;padding:20px 0;border-top:1px solid #243049;font:400 clamp(26px,4vw,44px)/1.1 "Instrument Serif",serif}
+.ach small{font:400 14px Inter;color:var(--mute);max-width:300px;text-align:right}
+@media(max-width:700px){.ach li{flex-direction:column;gap:6px}.ach small{text-align:left}}
+.ph{border:1.5px dashed #94a3b8;border-radius:14px;padding:14px;color:#64748b;font-size:13px;text-align:center}
+.dark .ph{border-color:#3b4a66;color:var(--mute)}
+/* timeline */
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:28px}
+.tl>div{position:relative;padding-bottom:30px}
+.tl>div:before{content:"";position:absolute;left:-36px;top:8px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--blue)}
+.tl .now:before{background:var(--cyan)}
+.tl h3{font-size:28px}.tl span{color:#64748b;font-size:14px}
+/* resume & contact */
+.res{background:#fff;border:1px solid var(--line);border-radius:24px;padding:40px;text-align:center}
+.res p{max-width:560px;margin:0 auto 22px;color:#475569}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:800px){.grid2{grid-template-columns:1fr}}
+form{display:grid;gap:14px}
+label{font-size:14px;font-weight:500;display:grid;gap:6px}
+input,textarea{font:inherit;padding:12px 14px;border:1px solid #cbd5e1;border-radius:12px;background:#fff;width:100%}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#dc2626}
+.err{color:#dc2626;font-size:13px;min-height:1em}
+#status{font-size:14px;padding:12px;border-radius:12px;display:none}
+.dark .row{margin-bottom:6px}
+.dark a{color:var(--cyan)}
+/* footer */
+footer{background:var(--navy);color:var(--text);border-radius:24px;padding:48px 36px 0;overflow:hidden;margin-top:16px}
+.fcols{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;font-size:14px;color:var(--mute)}
+.fcols a{display:block;color:var(--text);text-decoration:none;margin:4px 0}
+.fcols a:hover{color:var(--cyan)}
+.big{font:400 clamp(60px,15vw,200px)/.9 "Instrument Serif",serif;margin:40px 0 -.12em;letter-spacing:-.03em}
+/* modal */
+dialog{border:0;border-radius:24px;max-width:860px;width:calc(100% - 28px);max-height:90vh;padding:0;color:var(--ink)}
+dialog::backdrop{background:rgba(11,17,32,.7)}
+.mb{padding:32px}.mb h2{font-size:38px}
+.mb h4{margin:22px 0 6px;font:600 15px Inter}
+.mb ul{padding-left:20px;color:#475569}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
+.flow span{background:var(--navy);color:#fff;border-radius:99px;padding:6px 14px}
+.phs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:8px}
+.x{position:sticky;top:0;float:right;margin:14px;background:var(--navy);color:#fff;border:0;border-radius:99px;padding:8px 16px;cursor:pointer}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav aria-label="Main">
+  <b>JPN</b>
+  <ul id="links">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#education">Education</a></li><li><a href="#resume">Resume</a></li>
+  </ul>
+  <button id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <a class="btn p" href="#contact">Contact me</a>
+</nav>
+
+<div class="page">
+<main>
+<header id="home" class="hero">
+  <svg class="bg" aria-hidden="true" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="1"/></pattern></defs><rect width="800" height="600" fill="url(#g)"/><g fill="none" stroke="#1d4ed8" stroke-width="2"><path d="M0 120h160l40 40h200"/><path d="M0 220h100l40-40h120l40 40h140"/><path d="M800 380H620l-40 40H400"/><path d="M800 470H690l-30 30H480"/></g><g fill="#22D3EE"><circle cx="400" cy="160" r="5"/><circle cx="440" cy="220" r="5"/><circle cx="400" cy="420" r="5"/><circle cx="480" cy="500" r="5"/></g></svg>
+  <div>
+    <p class="hl">Electronics Engineer in the Making | PCB Design | RF &amp; Antenna Engineering</p>
+    <h1>JAYA PRIYAN N</h1>
+    <p class="q">I enjoy transforming electronics concepts into practical hardware solutions through PCB design, electromagnetic simulation, antenna engineering, and embedded system development.</p>
+    <p>Electronics and Communication Engineering student at M. Kumarasamy College of Engineering, passionate about PCB design, RF engineering, and innovative hardware development.</p>
+    <div class="cta">
+      <a class="btn p" href="#projects">Explore My Projects</a>
+      <a class="btn g" href="resume.pdf" download>Download Resume</a>
+      <a class="btn g" href="#contact">Contact Me</a>
+    </div>
+    <a class="open" href="#contact">Open to Internship Opportunities.</a>
+  </div>
+  <div class="art">
+    <svg viewBox="0 0 400 340" role="img" aria-label="Illustration of a multilayer PCB with a patch antenna radiating RF waves">
+      <g class="wave" fill="none" stroke="#22D3EE" stroke-width="2"><path d="M250 90a60 60 0 0 1 0 80"/><path d="M280 70a90 90 0 0 1 0 120"/><path d="M310 50a120 120 0 0 1 0 160"/><path d="M340 30a150 150 0 0 1 0 200"/></g>
+      <circle class="pulse" cx="220" cy="130" r="40" fill="#22D3EE" opacity=".3"/>
+      <g stroke="#3B82F6" stroke-width="2"><path d="M40 260l120-60 200 40-120 60z" fill="#13203a"/><path d="M40 240l120-60 200 40-120 60z" fill="#172a4a"/><path d="M40 220l120-60 200 40-120 60z" fill="#1e3a68"/></g>
+      <path d="M90 215l60-24 50 10M180 225l70 14M130 230l40 8" stroke="#22D3EE" stroke-width="2" fill="none"/>
+      <path d="M200 160l60-30 20 4-60 30z" fill="#22D3EE" opacity=".85"/>
+      <path d="M205 160v-30" stroke="#22D3EE" stroke-width="3"/>
+    </svg>
+  </div>
+</header>
+
+<section id="about" class="wrap">
+  <div class="label">About me</div>
+  <h2 class="quote">Engineering curiosity into <em>practical solutions</em>.</h2>
+  <p style="max-width:720px;color:#334155">I am Jaya Priyan N, an Electronics and Communication Engineering student with a strong interest in PCB design, RF and microwave engineering, antenna simulation, and embedded hardware development. Through academic and project-based work, I have explored circuit design, sensor integration, multilayer PCB development, and electromagnetic simulation. I enjoy learning new tools, solving technical problems, and developing practical solutions that connect electronics theory with real-world applications.</p>
+  <div class="cards">
+    <div class="card"><div class="ico">PCB</div><h3>PCB Design and Hardware Development</h3></div>
+    <div class="card"><div class="ico">RF</div><h3>RF and Microwave Engineering</h3></div>
+    <div class="card"><div class="ico">ANT</div><h3>Antenna Design and Electromagnetic Simulation</h3></div>
+    <div class="card"><div class="ico">IoT</div><h3>Embedded Systems and IoT</h3></div>
+  </div>
+  <p style="margin-top:28px;color:#475569;max-width:720px">I approach engineering with curiosity and analytical thinking, value teamwork, and keep learning through hands-on projects.</p>
+</section>
+
+<section id="skills" class="wrap">
+  <div class="label">Technical skills</div>
+  <h2>Tools I work <em>with</em></h2>
+  <div class="skills">
+    <div class="card"><h3>PCB Design Tools</h3><div class="chips"><span>Altium Designer</span><span>KiCad</span></div></div>
+    <div class="card"><h3>RF and Electromagnetic Simulation</h3><div class="chips"><span>CST Microwave Studio</span><span>Antenna design and simulation</span></div></div>
+    <div class="card"><h3>PCB Verification and Analysis</h3><div class="chips"><span>HyperLynx</span><span>Signal Integrity</span><span>Power Integrity</span><span>Thermal Analysis</span></div></div>
+    <div class="card"><h3>Embedded Systems and Hardware</h3><div class="chips"><span>Arduino</span><span>MQ-2 gas sensor</span><span>Bluetooth control</span><span>Sensor interfacing</span><span>IoT hardware</span></div></div>
+  </div>
+</section>
+
+<section id="projects" class="wrap">
+  <div class="label">Featured projects</div>
+  <h2>Hardware I have designed, <em>built</em> and simulated</h2>
+  <div id="plist"></div>
+</section>
+
+<section id="achievements" class="dark">
+  <div class="wrap">
+    <div class="label">Achievements</div>
+    <h2>Recognition</h2>
+    <ul class="ach">
+      <li>Second Prize <small>PCB Hackathon, KSR College of Engineering</small></li>
+      <li>Patent Filed <small>Mine Rover project (patent number to be added)</small></li>
+      <li>Second Prize <small>College-Level Project Expo</small></li>
+      <li>First Prize <small>College-Level Tech Bid</small></li>
+      <li>Participation <small>National-Level Project Expo, Srishti 2026</small></li>
+    </ul>
+    <div class="ph" style="margin-top:24px">Certificate images: add files to an /assets folder and replace this block.</div>
+  </div>
+</section>
+
+<section id="certifications" class="wrap">
+  <div class="label">Certifications</div>
+  <h2>Certified <em>learning</em></h2>
+  <div class="cards">
+    <div class="card"><h3>PCB Design Course</h3><p>Altium</p><div class="ph" style="margin-top:14px">Certificate image, issue date and verification link: not yet supplied</div></div>
+    <div class="card"><h3>Altium Designer Essentials: Mastering the Fundamentals</h3><p>Altium</p><div class="ph" style="margin-top:14px">Certificate image, issue date and verification link: not yet supplied</div></div>
+  </div>
+</section>
+
+<section id="education" class="wrap">
+  <div class="label">Education</div>
+  <h2>Where I <em>study</em></h2>
+  <div class="tl">
+    <div class="now"><h3>B.E. Electronics and Communication Engineering</h3><span>M. Kumarasamy College of Engineering · 2023–2027</span></div>
+    <div><h3>Higher Secondary Certificate (HSC)</h3><span>Akshaya Academy, Oddanchatram · 2023</span></div>
+    <div><h3>Secondary School Leaving Certificate (SSLC)</h3><span>Akshaya Academy, Oddanchatram · 2021</span></div>
+  </div>
+</section>
+
+<section id="resume" class="wrap">
+  <div class="res">
+    <h2>My <em>Resume</em></h2>
+    <p>Explore my academic background, technical skills, engineering projects, certifications, and achievements in my resume.</p>
+    <a class="btn d" href="resume.pdf" download>Download Resume</a>
+    <a class="btn d" href="resume.pdf" target="_blank" rel="noopener" style="margin-left:6px">View in new tab</a>
+    <p style="margin-top:14px;font-size:13px">Place your resume file next to this page and name it resume.pdf.</p>
+  </div>
+</section>
+
+<section id="contact" class="dark" style="padding:88px 28px">
+  <div class="wrap grid2">
+    <div>
+      <div class="label">Contact</div>
+      <h2>Let’s connect and build something <em style="color:var(--cyan)">innovative</em></h2>
+      <p style="color:var(--mute);margin-bottom:22px">I am interested in learning opportunities, engineering internships, collaborative projects, and technical discussions related to PCB design, RF engineering, antenna design, and embedded systems.</p>
+      <p class="row">Email: <a href="mailto:jayapriyannagaraj@gmail.com">jayapriyannagaraj@gmail.com</a></p>
+      <p class="row">Phone: <a href="tel:+919159781595">+91 9159781595</a></p>
+      <p class="row">Location: Dindigul, Tamil Nadu, India</p>
+      <!-- Add LinkedIn and GitHub links here once you have the URLs -->
+    </div>
+    <form id="cf" novalidate>
+      <label>Name<input name="name" required autocomplete="name"><span class="err"></span></label>
+      <label>Email address<input name="email" type="email" required autocomplete="email"><span class="err"></span></label>
+      <label>Subject<input name="subject" required><span class="err"></span></label>
+      <label>Message<textarea name="message" rows="5" required></textarea><span class="err"></span></label>
+      <button class="btn p" type="submit">Send message</button>
+      <div id="status" role="status"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="fcols">
+    <div><b style="color:#fff;font-size:18px">Jaya Priyan N</b><br>Turning electronics concepts into working hardware.</div>
+    <div><a href="#about">About</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#contact">Contact</a></div>
+    <div><a href="mailto:jayapriyannagaraj@gmail.com">jayapriyannagaraj@gmail.com</a><span>© <span id="yr"></span> Jaya Priyan N</span></div>
+  </div>
+  <div class="big" aria-hidden="true">Jaya Priyan</div>
+</footer>
+</div>
+
+<dialog id="dlg" aria-labelledby="dt"><button class="x" id="close">Close</button><div class="mb" id="dbody"></div></dialog>
+
+<script>
+// ===== CONFIG: paste your Formspree (or similar) endpoint to enable sending =====
+const FORM_ENDPOINT = ""; // e.g. "https://formspree.io/f/xxxxxxx"
+
+const ph = t => `<div class="ph">${t}<br>(not yet supplied)</div>`;
+const projects = [
+ {t:"Mine Rover for Hazardous Gas Detection",c:"Embedded Systems | Safety Engineering",
+  s:"Developed an Arduino-based Mine Rover for hazardous gas monitoring using an MQ-2 sensor, Bluetooth control, and real-time alerts to support monitoring in hazardous environments.",
+  tech:["Arduino","MQ-2 gas sensor","Bluetooth communication","Embedded systems"],
+  prob:"Hazardous gases and smoke can pose safety risks in mining environments. The project explores a mobile monitoring system for detecting potential hazards.",
+  obj:["Arduino-based control","MQ-2 sensor integration","Bluetooth-based rover control","Real-time alert functionality","Hazard monitoring application"],
+  flow:["Sensor Input","Arduino Processing","Monitoring and Alert Logic","User Notification"],
+  media:["Rover photograph","Circuit diagram","System architecture","Hardware connections","Demonstration video","Project report"],
+  res:"Patent filed. This is a prototype and is not certified for mining use or a guarantee of worker safety. Test results: to be added.",
+  icon:'<path d="M40 190h220M70 190v-40h110v40M110 150v-30h40" stroke="#22D3EE" stroke-width="3" fill="none"/><circle cx="90" cy="200" r="14" fill="none" stroke="#3B82F6" stroke-width="3"/><circle cx="170" cy="200" r="14" fill="none" stroke="#3B82F6" stroke-width="3"/>'},
+ {t:"PCB Design and Analysis for an IoT-Based Smart Chamber Monitoring System",c:"PCB Design | IoT Hardware | Engineering Analysis",
+  s:"Designed and developed a multilayer PCB integrating sensors and IoT modules for real-time environmental monitoring, with attention to thermal, signal integrity, and power integrity analysis.",
+  tech:["Altium Designer","KiCad","HyperLynx"],
+  prob:"Environmental monitoring in a chamber needs sensors and IoT modules on one reliable board. Add your own problem statement here.",
+  obj:["Develop a multilayer PCB","Integrate sensors and IoT modules","Organize component placement and routing","Investigate thermal behavior","Perform signal integrity analysis","Perform power integrity analysis"],
+  flow:["System overview","Schematic","Layout and routing","3D rendering","Analysis","Hardware"],
+  media:["System overview","PCB schematic","PCB layout and routing","3D board rendering","Thermal analysis","Signal and power integrity analysis","Final hardware implementation"],
+  res:"Layer count, board size, frequencies and analysis outcomes: to be added from your actual files.",
+  icon:'<rect x="60" y="60" width="180" height="140" rx="8" fill="none" stroke="#3B82F6" stroke-width="3"/><path d="M80 100h60l20 30h60M80 160h40l20-20h80" stroke="#22D3EE" stroke-width="3" fill="none"/><rect x="110" y="85" width="30" height="30" fill="#22D3EE"/>'},
+ {t:"Detection of Basal Cell Carcinoma Using a Semi-Circular Patch Antenna",c:"Antenna Design | RF Engineering | Research Project",
+  s:"Designed a semi-circular patch antenna for investigating non-invasive basal cell carcinoma detection using microwave imaging techniques.",
+  tech:["Semi-circular patch antenna","Electromagnetic simulation","Microwave imaging concepts"],
+  prob:"Microwave antenna structures can be investigated for their electromagnetic response in biomedical sensing and imaging. This is an engineering research project, not a clinically validated diagnostic device.",
+  obj:["Semi-circular patch antenna geometry","Electromagnetic simulation","Antenna design parameters","Microwave imaging concepts","Evaluation of antenna performance"],
+  flow:["Geometry","Parameters","Simulation","Performance evaluation"],
+  media:["Antenna geometry","Substrate and design parameters","Simulation setup","S-parameter plots","Radiation patterns","Surface current distribution","Research documentation"],
+  res:"Resonant frequency, return loss, bandwidth, gain, efficiency: add only values you have simulated or measured. Confirm the simulation tool for this project before listing it.",
+  icon:'<path d="M60 200a90 90 0 0 1 180 0z" fill="none" stroke="#22D3EE" stroke-width="3"/><path d="M110 200a40 40 0 0 1 80 0" fill="none" stroke="#3B82F6" stroke-width="3"/><path d="M150 100v40" stroke="#22D3EE" stroke-width="3"/>'}
+];
+const pl = document.getElementById("plist");
+projects.forEach((p,i)=>{
+  pl.insertAdjacentHTML("beforeend",`<article class="proj"><div class="thumb"><svg viewBox="0 0 300 260" role="img" aria-label="Schematic illustration for ${p.t}">${p.icon}</svg></div><div><div class="cat">${p.c}</div><h3>${p.t}</h3><p>${p.s}</p><div class="chips" style="margin:0 0 18px">${p.tech.map(x=>`<span>${x}</span>`).join("")}</div><button class="btn d" data-i="${i}">View Project</button></div></article>`);
+});
+const dlg=document.getElementById("dlg"),db=document.getElementById("dbody");
+pl.addEventListener("click",e=>{
+  const b=e.target.closest("button[data-i]");if(!b)return;
+  const p=projects[b.dataset.i];
+  db.innerHTML=`<div class="cat">${p.c}</div><h2 id="dt" class="serif">${p.t}</h2>
+  <h4>Problem statement</h4><p>${p.prob}</p>
+  <h4>Objectives and features</h4><ul>${p.obj.map(x=>`<li>${x}</li>`).join("")}</ul>
+  <h4>Implementation</h4><div class="flow">${p.flow.map((x,k)=>(k?"<b aria-hidden='true'>→</b>":"")+`<span>${x}</span>`).join("")}</div>
+  <h4>Technologies</h4><p>${p.tech.join(", ")}</p>
+  <h4>Results</h4><p>${p.res}</p>
+  <h4>Project media</h4><div class="phs">${p.media.map(ph).join("")}</div>`;
+  dlg.showModal();
+});
+document.getElementById("close").onclick=()=>dlg.close();
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+
+// mobile menu
+const m=document.getElementById("menu"),ul=document.getElementById("links");
+m.onclick=()=>{const o=ul.classList.toggle("open");m.setAttribute("aria-expanded",o)};
+ul.addEventListener("click",()=>{ul.classList.remove("open");m.setAttribute("aria-expanded","false")});
+document.getElementById("yr").textContent=new Date().getFullYear();
+
+// contact form
+const f=document.getElementById("cf"),st=document.getElementById("status");
+function show(msg,ok){st.style.display="block";st.textContent=msg;st.style.background=ok?"#0f3d2e":"#4a1d1d";st.style.color="#fff"}
+f.addEventListener("submit",async e=>{
+  e.preventDefault();let bad=false;
+  [...f.elements].filter(x=>x.name).forEach(x=>{
+    const er=x.parentElement.querySelector(".err");let m="";
+    if(!x.value.trim())m="This field is required.";
+    else if(x.type==="email"&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x.value))m="Enter a valid email address.";
+    er.textContent=m;x.setAttribute("aria-invalid",!!m);if(m)bad=true;
+  });
+  if(bad)return;
+  if(!FORM_ENDPOINT){show("Form delivery is not configured yet. Set FORM_ENDPOINT in the script to send messages, or email me directly at jayapriyannagaraj@gmail.com.",false);return}
+  try{
+    const r=await fetch(FORM_ENDPOINT,{method:"POST",headers:{Accept:"application/json"},body:new FormData(f)});
+    if(r.ok){show("Message sent. Thank you!",true);f.reset()}else throw 0;
+  }catch{show("Sending failed. Please email jayapriyannagaraj@gmail.com instead.",false)}
+});
+</script>
+</body>
+</html>
